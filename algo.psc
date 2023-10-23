@@ -10,11 +10,14 @@ tant que ((SUDOKU!=VALSUD) && (TAB n'a plus de 0)) faire
    écrireEcran(Quelle est la colonne et la ligne ? (ex: a2));
    lireClavier(%c,coord);
    font afficheErreurCO
-   si
-   écrireEcran(Quel est le chiffre eniter de 1 à 9);
-   lireClavier(%d, chiffre);
-   fonct afficheErreurCHIF
-
+   si choix=D alors
+      font afficherDEL
+    finsi
+  sinonsi choix=A
+    écrireEcran(Quel est le chiffre eniter de 1 à 9);
+    lireClavier(%d, chiffre);
+    fonct afficheErreurCHIF // 
+  finsi
 
 fin
 
